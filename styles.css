@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff; /* White text color for contrast */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #43cea2, #185a9d); /* Gradient background for the container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lost-btn {
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient for Lost button */
+    color: white;
+}
+
+.found-btn {
+    background: linear-gradient(to right, #56ab2f, #a8e063); /* Gradient for Found button */
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.item-section {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.item-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+}
+
+.item-details {
+    flex: 1;
+}
+
+/* form */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff; /* White label text */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #36d1dc, #5b86e5); /* Gradient for submit button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
+}
+
+
+.item-details p {
+    margin: 5px 0;
+    color: #333333;
+}
+
+.item-details p strong {
+    color: #000000;
+}
+
+/* Highlighting Lost and Found items */
+.lost-item {
+    border-left: 5px solid red; /* Red border for Lost items */
+    background: #ffe6e6; /* Light red background */
+}
+
+.found-item {
+    border-left: 5px solid green; /* Green border for Found items */
+    background: #e6ffe6; /* Light green background */
+}
